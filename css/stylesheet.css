@@ -67,15 +67,33 @@ header
 
 }
 
+#left
+{
+  position: inherit;
+  float: left;
+  display: inline-block;
+  width: 40%;
+}
+
+#right
+{
+  position: inherit;
+  display: inline-block;
+  margin-left: 8%;
+  width: 50%;
+  font-size: 20px;
+}
+
 footer
 {
-  position: absolute;
+  position: inherit;
   margin-bottom: 0%;
   width: 100%;
   background-color: #2e426b;
   color: white;
   display: inline-block;
 }
+
 #footer_left
 {
   display: inline-block;
@@ -110,21 +128,6 @@ footer
 }
 
 /* Product page */
-
-#left
-{
-  float: left;
-  display: inline-block;
-  width: 40%;
-}
-
-#right
-{
-  display: inline-block;
-  margin-left: 8%;
-  width: 50%;
-  font-size: 20px;
-}
 
 /* Photo viewer*/
 * 
