@@ -1,0 +1,231 @@
+/*
+  Fatima Velic
+  Praksa - Online trgovina 
+  12. Mart 2020. (početak)
+  23. Mart 2020. (rok za predaju)
+  stylesheet.css - file ce utjecati na sve elemente stranice
+*/
+
+body
+{ 
+  background-color: #d6d6d6;
+  font-family: Futura, "Trebuchet MS", Arial;
+}
+/* Main components */
+
+.logo
+{
+  position: absolute;
+  top: 4%;
+  left: 2%;
+  width: 40%;
+  height: 30%;
+}
+
+.main  
+{
+  position: absolute;
+  top: 18%;
+  left: 13%;
+  right: 12%;
+  height: 7%;
+  width: 80%;
+  padding: 4px;
+  background-color: #2e426b;
+}
+.main a
+{
+  color: #fff;
+  font-size: 60;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center; 
+  display: inline-block;
+  right: auto;
+  margin: 0px 0px 5px;
+  float: none;
+  clear: none;
+  padding: 14px 16px;
+}
+
+.main a:hover 
+{
+  color: #bfbfbf;
+}
+
+.container
+{
+  position: inherit;
+  margin-top: 18%;
+  margin-left: 13%;
+  margin-right: 12%;
+  margin-bottom: 5%;
+  width: 80%;
+  display: table;
+
+}
+
+footer
+{
+  position: absolute;
+  margin-bottom: 0%;
+  width: 100%;
+  background-color: #2e426b;
+  color: white;
+  display: inline-block;
+}
+#footer_left
+{
+  display: inline-block;
+  float: left;
+  margin-left: 30%;
+  width: 20%;
+  padding: 5;
+}
+#footer_right
+{
+  display: inline-block;
+}
+
+/* Index */
+.divider section 
+{
+  background-color: #a6b7d9;
+  position: inherit;
+  float: left;
+  margin: 0 1.5%;
+  width: 30%;
+  font-size: 30;
+  text-align: center;
+  color: #262626;
+  margin-bottom: 5%;
+}
+
+.divider section:hover
+{
+  background-color: #708bc2;
+  color: white;
+}
+
+/* Product page */
+
+#left
+{
+  float: left;
+  display: inline-block;
+  width: 40%;
+}
+
+#right
+{
+  display: inline-block;
+  margin-left: 5%;
+  width: 50%;
+  font-size: 20px;
+}
+
+/* Photo viewer*/
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.imgcontainer {
+  position: relative;
+}
+
+.mySlides {
+  display: none;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 16px;
+  margin-top: -50px;
+  color: black;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+.prev:hover, .next:hover 
+{ 
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+.row:after 
+{
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.column 
+{
+  float: left;
+  width: 20%;
+}
+.demo 
+{ opacity: 0.6; }
+
+.active, .demo:hover 
+{ opacity: 1; }
+
+/* Login style */
+
+.logform section 
+{
+  position: inherit;
+  display: block;
+  float: left;
+  margin: 0 1.5%;
+  width: 50%;
+  font-size: 30;
+  text-align: center;
+}
+
+#login
+{
+  background-color: #e8ad91;
+  margin-top: 200px;
+}
+
+.coffet
+{
+  background-color: #e0d19e;
+  position: inherit;
+  margin-left: 20%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+  display: table;
+}
+
+ #row .col
+{
+      text-align: center;
+      vertical-align: middle;
+      display: table-cell;
+      padding: 20px;
+}
+
+#row .col img
+{
+  max-width: 100px;
+  max-height: 100px;
+}
+

@@ -1,0 +1,63 @@
+<!-- 
+	Fatima Velic
+	Praksa - Online trgovina 
+	12. Mart 2020. (početak)
+	23. Mart 2020. (rok za predaju)
+	bowl.html - stranica proizvoda posuda. 
+-->
+
+<!DOCTYPE html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<title>Online Trgovina</title>
+</head>
+<body>
+	<div class="logo">
+		<img src="img/logo.png">
+	</div>
+	<div class="main">
+		<a class="active" href="index.html">Početna</a>
+		<a href="cart.html">Korpa</a>
+		<a href="checkout.html">Narudžba</a>
+	</div>
+
+	<div class="container">
+		<div id="left">
+			<div class="imgcontainer">
+	 			<div class="mySlides">
+	    			<img src="img/bowl/bowl.jpeg" style="width:100%">
+	  			</div>
+				<div class="mySlides">
+	      			<img src="img/bowl/bowl1.jpeg" style="width:100%">
+	 		 	</div>
+	  			<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+	 			<a class="next" onclick="plusSlides(1)">&#10095;</a>
+				<div class="row">
+				    <div class="column">
+				    	<img class="demo cursor" src="img/bowl/bowl.jpeg" style="width:100%" onclick="currentSlide(1)">
+				    </div>
+				    <div class="column"> 
+				    	<img class="demo cursor" src="img/bowl/bowl1.jpeg" style="width:100%" onclick="currentSlide(2)">
+				    </div>
+				</div>
+			</div>
+		</div>
+		<div id="right">
+			<h3>Posuda</h3>
+			<h4>12KM</h4>
+			<p>Skladne linije, minimalistički dizajn i izdržljiv materijal su odlični razlozi zbog kojih je ova posuda pravi izbor za svaki obrok.</p>
+			<input type="submit" value="Dodaj u košaricu">
+		</div>
+	</div>
+	<footer>
+		<div id="footer_left">
+			<p>Infomedia<br>Praksa<br>Mart 2020.</p>
+		</div>
+		<div id="footer_right">
+			<p>Fatima Velic<br>&copy; All rights reserved</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="functionality.js"></script>
+</body>
