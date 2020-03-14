@@ -57,7 +57,6 @@ function formValidation()
 			}
 		}
 	}
-	alert("Unesite ispravne podatke da biste naručili.")
 	return false;
 } 
 
