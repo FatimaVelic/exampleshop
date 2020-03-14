@@ -11,40 +11,73 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<script type="text/javascript" src="functionality.js"></script>
 	<title>Online Trgovina</title>
 </head>
-<body >
-	<div class="main">
-		<a class="active" href="index.html">Trgovina</a>
-		<a href="cart.html">Korpa</a>
+<body onload="document.registration.uName.focus();">
+
+	<div class="logo">
+		<img src="img/logo.png">
 	</div>
-	<div class="container-c">
+	<div class="main">
+		<a class="active" href="index.html">Početna</a>
+		<a href="cart.html">Korpa</a>
+		<a href="checkout.html">Narudžba</a>
+	</div>
+
+	<div class="container">
 		<section id="left">
 			<table>
-			<tr>
-				<td><th>Slika</th></td><td><th>Naziv</th></td><td><th>Cijena</th></td><td><th>Količina</th></td>
-			</tr>
-			<tr>
-				
-			</tr>
-		</table>
+				<tr>
+					<td></td>
+					<td>Narudžba</td>
+					<td></td>
+				</tr>
+				<tr>
+					<td>Slika</td>
+					<td>Naziv</td>
+					<td>Cijena</td>
+					<td>Količina</td>
+				</tr>
+				<tr>
+					<td><img src="img/glass/glass.jpeg" style="width: 80%"></td>
+					<td>Čaša</td>
+					<td>2KM</td>
+					<td><select name="kolicina">
+						<option value="6k">Set - 6 komada</option>
+					</select></td>
+				</tr>
+				<tr>
+					<td><img src="img/bowl/bowl.jpeg" style="width: 80%"></td>
+					<td>Posuda</td>
+					<td>12KM</td>
+					<td><select name="kolicina">
+					<option value="1k">1 komad</option>
+				</select></td>
+				</tr>
+			</table>
 		</section>
-		<section id="login">
-		<h1>Popunite formular da biste završili narudžbu</h1>
-			<form name='registration' onSubmit="return formValidation();">
-			<ul>
-				<li><br><label for="name">Ime i prezime:</label></li>
-				<li><input type="text" name="name" size="40" required=""/></li>
-				<li><br><label for="email">Email:</label></li>
-				<li><input type="text" name="email" size="20" required=""/></li>
-				<li><br><label for="adress">Adresa:</label></li>
-				<li><input type="text" name="adress" size="20" required=""/></li>
-				<li><br><label for="phone">Broj telefona:</label></li>
-				<li><input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{3}" required=""></li>
-				<li><br><input type="submit" name="submit" value="Potvrdi i naruči" onclick="validate()"></li><br>
-			</ul>
+		<section id="right">
+			<form id="registration" name='registration' onSubmit="return formValidation();">
+			<br><h3>Popunite formular da biste dovršili narudžbu</h3>
+			<br><label for="uName">Ime i prezime:</label>
+				<input type="text" name="uName" size="40" >
+				<br><br><label for="email">Email:</label>
+				<br><input type="text" name="email" size="40" >
+				<br><br><label for="adress">Adresa:</label>
+				<br><input type="text" name="adress" size="40" required="">
+				<br><br><label for="uphone">Broj telefona:</label>
+				<br><input type="text" name="uphone" size="9">
+				<br><br><input type="submit" name="submit" value="Potvrdi i naruči"><br><br>
 		</form>
 	</section>
 		</div>
-		
+		<footer>
+		<div id="footer_left">
+			<p>Infomedia<br>Praksa<br>Mart 2020.</p>
+		</div>
+		<div id="footer_right">
+			<p>Fatima Velic<br>&copy; All rights reserved</p>
+		</div>
+	</footer>
+	<script type="text/javascript" src="functionality.js"></script>
+</body>
